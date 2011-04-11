@@ -17,7 +17,7 @@ package
 			super(800, 600, 40, false);
 		}
 
-		override public function init(e:Event = null):void 
+		override public function init():void 
 		{
 		}
 
