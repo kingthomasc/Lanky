@@ -2,25 +2,23 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import net.flashpunk.Engine;
 
 	/**
 	 * ...
 	 * @author Thomas King
 	 */
 	[Frame(factoryClass="Preloader")]
-	public class Main extends Sprite 
+	public class Main extends Engine 
 	{
 
 		public function Main():void 
 		{
-			if (stage) init();
-			else addEventListener(Event.ADDED_TO_STAGE, init);
+			super(800, 600, 40, false);
 		}
 
-		private function init(e:Event = null):void 
+		override public function init(e:Event = null):void 
 		{
-			removeEventListener(Event.ADDED_TO_STAGE, init);
-			// entry point
 		}
 
 	}
